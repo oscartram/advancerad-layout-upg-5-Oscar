@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+
+    font-family: "Roboto", serif
+}
+
+.container {
+    background-color: #9BC4BC;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #8DDBE0;
+    color: #9BC4BC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    background-color: #9BC4BC;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+
+header nav a:hover {
+    color: black;
+    background-color: #72DDF7;
+
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9BC4BC;
+    margin: 10px auto;
+    width: 80%;
+}
+
+
+footer {
+    background-color: #8DDBE0;
+    color: #9BC4BC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+
+}
+
+@media (min-width:600px) {
+
+    /*detta händer om vilkor är sant*/
+    body {
+        background-color: white;
+    }
+
+    header nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        gap: 70px;
+        margin: 0, 30px
+    }
+}
+
+
+
+/*form*/
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+
+}
+
+.send-button-container {
+    margin: 0 auto;
+}
+
+.send-button-container input {
+    width 30%;
+    min-width: 100px;
+
+}
+
+label {
+    display: block;
+    padding-bottom: 7px;
+
+
+}
+
+
+@media (min-width:600px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .send-button-container {
+        grid-column: span 2;
+    }
+}
